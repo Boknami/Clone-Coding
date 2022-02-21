@@ -10,16 +10,17 @@
 
     <script type="text/babel">
         function App() {
+            //<--------useState에서 변수, 함수 가져오고 연결---------->
             const [amount, setamount] = React.useState();//useState의 결과는 2개 값을 가진 배열(데이터, 함수)
+            const [inverted, setFlipped] = React.useState(false);//기본 false값을 가지는 2개 값 가진 배열
+            
+            //<--------이벤트 발생 시 작동 함수-------->
+            const Reset = () => {setamount(0);}
             const onChange = (event) => {//이벤트 발생 시 이 함수 작동!!
                 setamount(event.target.value);//적혀있는 값을 들고와서 minutes를 변경한다.
-            }
-            
-            const reset = () => {setamount(0);}
-
-            const [inverted, setFlipped] = React.useState(false);//기본 false값을 가지는 2개 값 가진 배열
+            }               
             const setInvert = () => {
-                reset();
+                Reset();
                 setFlipped((current) => !current);
             }
 
@@ -50,7 +51,7 @@
                         />
                     </div>
 
-                    <button onClick={reset}>Reset</button>
+                    <button onClick={Reset}>Reset</button>
                     <button onClick={setInvert}>{inverted ? "Turn Back" : "Invert"}</button>
                 </div>
             )
