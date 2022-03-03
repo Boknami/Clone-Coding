@@ -1,0 +1,42 @@
+브라우저는 html을 열고, html파일은 css, js를 가져온다.
+
+* 변 수 *
+1) cosnt
+상수.
+더 이상 값이 변경할 수 없다.
+더 값을 업데이트(변경)할 필요가 없다.
+
+2) let
+업데이트 가능한 변수
+
+3) var
+어떠한 규칙도 없다.
+
+기본적으로는 const를 사용하고 필요한 경우만 let으로 ㄱ
+
+
+* 배 열 *
+const Ary = [11, 53, "hello", false, null, true];
+접근 -> 원래대로 Ary[3]
+추가 -> Ary.push("sunday");
+
+* 오 브 젝 트 *
+const player = {
+    name: "geunjae",
+}
+객체랑 똑같음. 
+중괄호 { } 사용
+안쪽에서 : 사용을 한다. 
+name : geunjae
+
+
+
+
+
+
+
+
+
+
+
+
