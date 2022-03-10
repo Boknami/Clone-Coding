@@ -60,8 +60,23 @@ const Player = {
 	}
 }
 ----------------------------------------------------------------
+* return *
+function calculaterKrAge(a) {
+	return a+2;
+}
 
 
+const KrAge = calculaterKrAge(96);
+console.log(KrAge);
+----------------------------------------------------------------
+* conditional 조건문 *
+const age = prompt("How old are you?");
+사용자에게 창을 띄워줄 수 있음
+메시지를 보여주고 값을 넣으라고한다.
+너무나 오래되서 안쓰는추세
+
+변수의 타입 -> console.log(typeof age);
+타입변경[스트링을 넘버로) -> parseInt( )
 
 
 
