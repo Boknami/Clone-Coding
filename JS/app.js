@@ -1,12 +1,22 @@
-const Cal = {
-    Add : function(){
-        console.log("ADD");
+const Calculator = {
+    plus : function(a, b){
+        console.log(a + b);
     },
 
-    Minus: function(){
-        console.log("빼기");
-    }
-}
+    minus : function(a, b){
+        console.log(a - b);
+    },
 
-Cal.Add();
-Cal.Minus();
+    times : function(a, b){
+        console.log(a * b);
+    },
+
+    divide : function(a, b){
+        console.log(a / b);
+    },
+
+    power : function(a, b){
+        console.log(a**b);
+    }
+};
+
