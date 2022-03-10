@@ -1,8 +1,13 @@
 브라우저는 html을 열고, html파일은 css, js를 가져온다.
 
+* 데이터 타입 *
+1. string
+2. number
+
 * 변 수 *
+"기본적으로는 const를 사용하고 필요한 경우만 let으로"
 1) cosnt
-상수.
+상수
 더 이상 값이 변경할 수 없다.
 더 값을 업데이트(변경)할 필요가 없다.
 
@@ -11,9 +16,6 @@
 
 3) var
 어떠한 규칙도 없다.
-
-기본적으로는 const를 사용하고 필요한 경우만 let으로 ㄱ
-
 
 * 배 열 *
 const Ary = [11, 53, "hello", false, null, true];
@@ -29,6 +31,25 @@ const player = {
 안쪽에서 : 사용을 한다. 
 name : geunjae
 
+
+* 함 수 *
+반복해서 사용할 수 있는 코드
+실행 - 함수명( );
+데이터를 보내는 방법 - argument
+데이터를 받는 방법 - 함수의 ( ) 에서 받아주기
+
+function plus(a, b) { } -> a랑 b는 함수 안에서만 존재
+
+기존에 방법
+=> function plus(a, b) { }
+
+똑같은 방법(객체 안에 함수를!!)
+const Player = {
+	name : "g
+	plus : function( ) {
+		console.log("DD");
+	}
+}
 
 
 
