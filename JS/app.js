@@ -1,22 +1,3 @@
-const Calculator = {
-    plus : function(a, b){
-        console.log(a + b);
-    },
+const title = document.getElementById("title");
 
-    minus : function(a, b){
-        console.log(a - b);
-    },
-
-    times : function(a, b){
-        console.log(a * b);
-    },
-
-    divide : function(a, b){
-        console.log(a / b);
-    },
-
-    power : function(a, b){
-        console.log(a**b);
-    }
-};
-
+title.innerText = "G";

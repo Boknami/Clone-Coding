@@ -78,7 +78,10 @@ const age = prompt("How old are you?");
 변수의 타입 -> console.log(typeof age);
 타입변경[스트링을 넘버로) -> parseInt( )
 
+isNan( ) -> boolean을 반환
 
+==가 아니고 === 3개를 쓴다!!
+----------------------------------------------------------------
 
 
 
