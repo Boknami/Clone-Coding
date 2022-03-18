@@ -1,14 +1,14 @@
-const h1 = document.querySelector(".title h1")
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-function Run(){
-    const h1sColor = h1.style.color;
-
-    if (h1sColor === "blue"){
-        h1sColor = "orange";
-    }
-    else{
-        h1sColor = "black";
+function onLoginBtnClick() {
+    const username = loginInput.value;
+    
+    if(username === ""){
+        alert("입력 값 없어!");
+    } else if(username.length > 10){
+        alert("이름이 너무 길어!");
     }
 }
 
-h1.addEventListener("click", Run);
+loginButton.addEventListener("click", onLoginBtnClick)
