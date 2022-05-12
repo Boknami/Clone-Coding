@@ -3,29 +3,25 @@ import styles from "./App.module.css";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-  const [coins, setCoins] = useState([])
-  useEffect( () => {
-    fetch("https://api.coinpaprika.com/v1/tickers")
-    .then(response => response.json())
-    .then(json => {
-      setCoins(json);
+  const [Loading, setLoading] = useState(true);
+  const [movies,setMovies] = useState([]);
+  useEffect(() => {
+    fetch(
+      'https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year'
+    )
+    .then((response) => response.json())
+    .then((json) => {
+      setMovies(json.data.movies);
       setLoading(false);
     });
   }, [])
 
+  console.log(movies);
+  
   return(
     <div>
-        <h1>The Coins!</h1>
-        {loading ? <strong>Loading..</strong> : null }
-
-        <ul>
-          {coins.map((coin) => (
-          <li>
-            {coin.name} ({coin.sysbol}): ${coin.quotes.USD.price}
-          </li>
-          ))}
-        </ul>
+       <h1>영화 추천</h1>
+       {Loading? <h1>로딩중...</h1> : null} 
     </div>
   );
 }
